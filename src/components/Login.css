@@ -1,0 +1,49 @@
+/* Make image fully cover its column */
+.left-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Title overlay box in the top-right corner */
+.title-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: right;
+  border-bottom-left-radius: 10px;
+  max-width: 80%;
+}
+
+/* Login card styling */
+.login-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field focus */
+.login-card .form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* Button hover effect */
+.login-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .title-overlay {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}
